@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* height: 5000px; */
+    overflow-x: hidden;
+
+}
+/* signin */
+
+
+/* .modal{
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+} */
+.modal .container{
+    position: absolute;
+    /* margin-left: 3%; */
+    /* margin-top: 1%; */
+    width: 440px;
+    height: 630px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+
+}
+.modal .container .form h1{
+    color: #fff;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+.modal .container input{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 320px;
+    height: 47px;
+    background-color: #333;
+    border-radius: 3px;
+    border: none;
+    font-size: 20px;
+
+}
+.modal .container input::placeholder{
+    font-size: 17px;
+    margin-left: 15px;
+    padding: 12px;
+
+}
+.modal .container input[type=submit]{
+    width: 320px;
+    height: 45px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.modal .container input[type=checkbox]{
+    width: 25px;
+    height: 18px;
+    border-radius: 5px;
+}
+.modal .container label{
+    color: rgb(128, 126, 126);
+}
+.modal .container .form a{
+    float: right;
+    margin-top: 24px;
+    margin-right: 64px;
+    color: rgb(125,119,119);
+    text-decoration: none;
+    color: #fff;
+}
+
+.modal .container .content{
+    position: absolute;
+    margin-top: 80px;
+    font-size: 9px;
+    margin-left: 55px;
+}
+
+.modal .container .content h6{
+    color: rgb(128, 126, 126);
+}
+.modal .container button{
+    float: right;
+}
+
+
+/* -------------------- */
+
+.bg-img {
+    /* background-image: url(https://www.broadbentssolicitors.co.uk/wp-content/uploads/2023/01/netflix-web.jpg); */
+    /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://www.broadbentssolicitors.co.uk/wp-content/uploads/2023/01/netflix-web.jpg); */
+    width: 100vw;
+    height: 95vh;
+    object-fit: cover;
+    filter: brightness(0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: 50%;
+    background-size: cover;
+    /* background-color: black; */
+
+}
+
+.main {
+    height: 95vh;
+}
+
+.main-heading {
+    /* height: 300px; */
+    /* width: 70vw; */
+    left: auto;
+    right: auto;
+    /* padding-bottom: 20vh; */
+    /* padding-top: 10vh; */
+}
+
+.main-heading h1 {
+    font-size: 3.2vw;
+    font-weight: 900;
+}
+
+.main-heading .p1 {
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.main-heading .p2 {
+    font-size: 1.4vw;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+
+.sign {
+    padding: 5px 17px;
+}
+@media (max-width:1176px){
+    .main-heading .p1 {
+        font-size: 2vw;
+    }
+    
+    .main-heading .p2 {
+        font-size: 2vw;
+    }
+    }
+@media (max-width:856px){
+    
+.main-heading h1 {
+    font-size: 4.2vw;
+}
+
+.main-heading .p1 {
+    font-size: 2.5vw;
+}
+
+.main-heading .p2 {
+    font-size: 2.4vw;
+}
+}
+
+/* ------------------------- */
+.main-heading form {
+    width: 60%;
+}
+
+.main-heading form #floatingInput {
+    color: #fff;
+}
+
+.main-heading form .form-control:focus {
+    border-color: #fff;
+    box-shadow: none;
+    border-width: medium;
+}
+
+.main-heading form .form-floating>.form-control:focus~label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-heading form .form-floating>.form-control:focus~label::after {
+    background-color: transparent;
+}
+
+.main-heading form .form-floating {
+    width: 30%;
+
+}
+
+.main-heading form #floatingInput {
+    background: transparent;
+    backdrop-filter: blur(3px);
+}
+
+.main-heading form label {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 10px;
+
+}
+
+.main-heading .btn {
+    height: 60px;
+    font-size: 1.5rem;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.main-heading .btn::after {
+    content: " \276F";
+    margin-left: 5px;
+}
+
+@media (max-width:781px) {
+    .main-heading form .form-floating {
+        width: 70%;
+    }
+
+}
+
+/* ------------------- */
+/* enjoy */
+.section-title {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.section-paragraph {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.watch,
+.download,
+.children {
+    border-top: 5px solid #232323;
+    /* border-bottom: 5px solid #232323; */
+}
+
+.download .container .card {
+    width: 21vw;
+    height: 14vh;
+    /* border: 1px solid #e26262; */
+    /* padding-left: 50px; */
+    margin-left: 9vw;
+    top: -17vh;
+    background-color: black;
+    /* position: fixed; */
+
+}
+
+.download .card .row {
+    width: 320px;
+    height: 14vh;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 3px;
+}
+
+.download .card-img {
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    background-attachment: fixed;
+    /* padding: 2px 0px 5px 2px; */
+    object-fit: cover;
+    /* position: relative; */
+    max-width: 86px;
+    min-height: 73px;
+    background-position: 50%;
+
+}
+
+.download .card-body p {
+    line-height: normal;
+    background-attachment: fixed;
+}
+
+/* responsive */
+@media (max-width:1179px) {
+
+    .download .container .card {
+        width: 10vw;
+        height: 10vh;
+        /* padding-right: 40px; */
+        top: -17vh;
+        left: -28px;
+
+    }
+
+    .download .card .row {
+        width: 300px;
+        height: 13vh;
+    }
+
+    .download .card-img {
+        width: 50%;
+        height: 65%;
+    }
+}
+
+@media (max-width:1017px) {
+
+    .download .container .card {
+        width: 10vw;
+        height: 10vh;
+        /* padding-right: 40px; */
+        top: -13vh;
+        left: 6px;
+
+    }
+
+    .download .card .row {
+        width: 250px;
+        height: 13vh;
+        padding: 0px;
+    }
+
+    .download .card-img {
+        width: 70%;
+        height: 65%;
+    }
+}
+
+@media (max-width:994px) {
+
+    .download .container .card {
+        width: 10vw;
+        height: 10vh;
+        /* padding-right: 40px; */
+        top: -17vh;
+        left: 36px;
+
+    }
+
+    .download .card .row {
+        width: 350px;
+        height: 13vh;
+        padding: 0px;
+    }
+
+    .download .card-img {
+        width: 100%;
+        height: 65%;
+    }
+
+    /* .download .card-body p {
+    padding-left: 58px;
+} */
+}
+
+@media (max-width:770px) {
+
+    .download .container .card {
+        width: 10vw;
+        height: 10vh;
+        /* padding-right: 40px; */
+        top: -13vh;
+        left: 35px;
+
+    }
+
+    .download .card .row {
+        width: 320px;
+        height: 13vh;
+        padding: 0px;
+    }
+
+    .download .card-img {
+        width: 90%;
+        height: 65%;
+        /* padding-right: 48px; */
+    }
+
+    .download .card-body p {
+        padding-left: 48px;
+    }
+}
+
+@media (max-width:720px) {
+
+    .download .container .card {
+        top: -13vh;
+        left: 35px;
+
+    }
+
+    .download .card .row {
+        width: 240px;
+        height: 13vh;
+        padding: 0px;
+    }
+
+    .download .card-img {
+        width: 90%;
+        height: 65%;
+        /* padding-right: 48px; */
+    }
+
+    .download .card-body p {
+        padding-left: 38px;
+    }
+}
+
+@media (max-width:721px) {
+
+    .download .container .card {
+        top: -13vh;
+        left: 60px;
+    }
+
+    .download .card .row {
+        width: 240px;
+        height: 13vh;
+        padding: 0px;
+    }
+
+    .download .card-img {
+        width: 70%;
+        height: 65%;
+        /* padding-right: 48px; */
+    }
+
+    .download .card-body p {
+        padding-left: 48px;
+    }
+}
+
+/* .download .card-body button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+} */
+
+/* kk */
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+    left: 150px;
+    top: -50px;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ----------- */
+
+.faq {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-top: 5px solid #232323;
+    border-bottom: 5px solid #232323;
+}
+
+.faq h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-top: 3vh;
+}
+
+.faq button {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.faq .accordion {
+    --bs-accordion-color: rgb(255, 255, 255, 255);
+    --bs-accordion-bg: rgb(45, 45, 45);
+    --bs-accordion-border-color: none;
+    --bs-accordion-border-radius: none
+}
+
+.faq .accordion .accordion-item:first-of-type .accordion-button {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.faq .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.faq .accordion-button:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.faq .accordion-button:not(.collapsed) {
+    background-color: rgb(65, 65, 65);
+    color: rgb(255, 255, 255, 255);
+}
+
+.faq .accordion-button::after {
+    content: "+";
+    background-image: none;
+    position: absolute;
+    height: 30px;
+    font-size: 50px;
+    top: 5px;
+    right: 45px;
+}
+
+.faq .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: none;
+    content: "\00d7";
+}
+
+/* form */
+.faq .p2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+.faq form {
+    width: 60%;
+}
+
+.faq form #floatingInput {
+    color: #fff;
+    backdrop-filter: blur(3px);
+
+}
+
+.faq form .form-control:focus {
+    border-color: #fff;
+    box-shadow: none;
+    border-width: medium;
+
+}
+
+.faq form .form-floating>.form-control:focus~label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.faq form .form-floating>.form-control:focus~label::after {
+    background-color: transparent;
+}
+
+.faq form .form-floating {
+    width: 30%;
+}
+
+.faq form #floatingInput {
+    background: transparent;
+}
+
+.faq form label {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 10px;
+}
+
+.faq .btn {
+    height: 60px;
+    font-size: 1.5rem;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.faq .btn::after {
+    content: " \276F";
+    margin-left: 5px;
+}
+
+@media (max-width:781px) {
+    .faq form .form-floating {
+        width: 70%;
+    }
+
+}
+
+/* footer */
+
+footer {
+    border-top: 5px solid #232323;
+
+}
+
+footer p,
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer select {
+    background: transparent;
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    appearance: none;
+    border-radius: 5px
+}
+
+footer .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    top: 15px;
+    right: -115px;
+
+}
